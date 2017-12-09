@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <ACE_ROOT>d:\projects\ACE_wrappers</ACE_ROOT>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ExecutablePath>d:\projects\ACE_wrappers\lib;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>D:\projects\ACE_wrappers;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\projects\ACE_wrappers\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="ACE_ROOT">
+      <Value>$(ACE_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
